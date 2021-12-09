@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#6ED479"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#378940"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ED479"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/check_start"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/button_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/startbtn4" />
+
+        <Button
+            android:id="@+id/test4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_gravity="right"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/btn_log2"
+
+            android:layout_marginRight="10dp"
+            android:onClick="onClickLog"
+            android:text="로그 더 보기"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="최신로그"
+        android:padding="13dp"/>-->
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:padding="5dp"
+
+        android:paddingRight="10dp"
+        android:background = "#378940" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "검사날짜"
+            android:textStyle="bold"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "공유기명"
+            android:textStyle="bold"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "취약점 수"
+            android:textStyle="bold"
+            android:textColor = "#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6ED479">
+
+        <ListView
+            android:id="@+id/mainlist"
+            android:layout_width="match_parent"
+            android:layout_height="190dip"
+            android:childDivider="@android:color/black"
+            android:divider="@android:color/black"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

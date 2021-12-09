@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Scanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="IOT기기 선택"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="검사 할 IOT기기를 선택해 주세요!"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="0dip" />
+    <!--<TextView-->
+    <!--android:id="@+id/WifiState"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5sp">
+
+        <View
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/btn_log2"
+            android:text="취소"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <View
+
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_log2"
+
+            android:onClick="onClickIot"
+            android:text="확인"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
