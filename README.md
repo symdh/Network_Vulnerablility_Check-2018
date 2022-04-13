@@ -1,5 +1,6 @@
 Project Year : 2018 <br />
 Project name : WIFI 네트워크 취약점 점검 어플리케이션 <br />
+역할 : 설계/개발  <br />
 TARGET : ANDROID 6.0 ~ 9.0 <br />
 DEVELOPMENT ENVIRONMENT :  WINDOWS 10 / Android(JAVA)
 
